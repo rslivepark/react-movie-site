@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  padding: 1.4rem !important;
+  padding: 1.3rem !important;
 }
 
 #navbarScroll > div > a {
@@ -13,6 +13,34 @@
 }
 
 .netflix-logo {
-  height: 24px;
+  height: 28px;
   width: auto;
+}
+
+@media screen and (max-width: 992px) {
+  #root > div > div > nav > div > button {
+    background-color: #fafafa;
+    color: #fafafa !important;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none !important;
+  }
+  button.navbar-toggler {
+    width: 36px;
+    height: auto;
+    padding: 1px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button.collapsed {
+    width: 36px;
+    height: auto;
+    padding: 1px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
