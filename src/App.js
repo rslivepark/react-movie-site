@@ -14,7 +14,7 @@ import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-    <div>
+    <div style={{ backgroundColor: '#181818' }}>
       <Routes>
         <Route path='/' element={<AppLayout />}>
           <Route index element={<Homepage />} />

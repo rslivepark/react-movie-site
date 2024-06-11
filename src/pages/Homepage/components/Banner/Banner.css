@@ -22,12 +22,12 @@
 }
 
 .banner-text-area {
-  width: 45%;
+  width: 50vw;
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 5rem;
 }
 
 .banner-text-area > * {

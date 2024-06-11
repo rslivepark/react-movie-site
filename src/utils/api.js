@@ -1,17 +1,19 @@
-import axios from 'axios';
+import Axios from 'axios';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
-const api = axios.create({
+const api = Axios.create({
   baseURL: 'https://api.themoviedb.org/3',
-  headers: {
-    Accept: 'application/json',
-    Authorization: `Bearer ${API_KEY}`,
+  params: {
+    api_key: API_KEY,
+    language: 'en-US',
   },
 });
 
+console.log('api.js', api);
+
 // 요청 인터셉터 추가하기
-axios.interceptors.request.use(
+Axios.interceptors.request.use(
   function (config) {
     // 요청이 전달되기 전에 작업 수행
     return config;
@@ -23,7 +25,7 @@ axios.interceptors.request.use(
 );
 
 // 응답 인터셉터 추가하기
-axios.interceptors.response.use(
+Axios.interceptors.response.use(
   function (response) {
     // 2xx 범위에 있는 상태 코드는 이 함수를 트리거 합니다.
     // 응답 데이터가 있는 작업 수행

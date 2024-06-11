@@ -4,6 +4,14 @@
   height: 100vh;
 }
 
+ul.react-multi-carousel-track {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
 .navbar {
   padding: 1.3rem !important;
 }
